@@ -2,28 +2,35 @@
 <head>
     <meta charset="UTF-8"></meta>
     <title>kode</title>
+    <!-- google字體API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet"> 
+    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap'); </style>
+
     <style>
-        html{font-family: '微軟正黑體', Courier, monospace;}
+        html{font-family: 'Noto Sans TC', sans-serif;}
         .flex {margin-left: auto;margin-right: auto;
             display: flex;flex-direction: row;justify-content:flex-start;}
         .flexitem {display: flex;}
-        .kode上方欄位{height: 25px;}
-        .kode上方欄位>.flexitem{height: 100%;margin-top: auto;margin-bottom: auto;}
-        .kode上方欄位>.flexitem>a{text-align: center;width: 100%;}
-        .kode上方欄位>p{text-align: center;margin-top: auto;margin-bottom: auto;font-size:25px;}
-        .kode上方欄位>div{width: 5%;background-color: aqua;margin: 10px;}
-        .kode上方欄位>img{margin: 10px;margin-top: auto;margin-bottom: auto;}
-        .kode上方欄位>input{width: 10%;margin-left: 10px;margin-right: 5px;}
-        .kode上方欄位>div>a {text-decoration:none;color: #000;}
+        .kode上方欄位{height: 50px;}
+        .kode上方欄位>.flexitem{height: 100%;margin-top: auto;margin-bottom: auto;margin-top: auto;margin-bottom: auto;}
+        .kode上方欄位>a{height: 100%;}
+        .kode上方欄位>a>img{height: 100%;}
+        .kode上方欄位>p{text-align: center;margin-top: auto;margin-bottom: auto;font-size:25px;margin-top: auto;margin-bottom: auto;}
+        .kode上方欄位>div{width: 5%;background-color: aqua;margin: 10px;margin-top: auto;margin-bottom: auto;}
+        .kode上方欄位>.logo{margin: 10px;margin-top: auto;margin-bottom: auto;height: 100%;}
+        .kode上方欄位>.search_button{margin: 0px;margin-top: auto;margin-bottom: auto;height: 40%;cursor: pointer;}
+        .kode上方欄位>input{width: 8%;margin-left: 10px;margin-right: 5px;margin-top: auto;margin-bottom: auto;height: 35%;}
+        .kode上方欄位>div>a {text-decoration:none;color: #000;margin-top: auto;margin-bottom: auto;text-align: center;width: 100%;margin-top: auto;margin-bottom: auto;}
         </style>
     <scrip scr="ht.js"></scrip>
 </head>
 <body>
     <div class="flex kode上方欄位">
-        <img src="logo.png" height="150" class="flexitem">
-        <p class="flexitem"><b>Kode</b></p>
+        <a href="web.html" class="flexitem logo"><img src="logo.jpg" height="150" class="flexitem logo"></a>
+        <!-- <p class="flexitem"><b>Kode</b></p>     -->
         <input type="text" placeholder="在kode上搜尋">
-        <button id="btn3" onclick="find()">搜尋</button>
+        <img src="search.png" alt="搜尋" class="search_button" onclick="find()">
         <div class="flexitem"> <a href="thanks.html">感謝 </a> </div>
         <div class="flexitem"><a href="introduce.html" >介紹 </a></div>
         <div class="flexitem"><a href="account number.html">帳號 </a></div>
