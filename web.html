@@ -2,18 +2,34 @@
 <head>
     <meta charset="UTF-8"></meta>
     <title>kode</title>
+    <style>
+        html{font-family: '微軟正黑體', Courier, monospace;}
+        .flex {margin-left: auto;margin-right: auto;
+            display: flex;flex-direction: row;justify-content:flex-start;}
+        .flexitem {display: flex;}
+        .kode上方欄位{height: 25px;}
+        .kode上方欄位>.flexitem{height: 100%;margin-top: auto;margin-bottom: auto;}
+        .kode上方欄位>.flexitem>a{text-align: center;width: 100%;}
+        .kode上方欄位>p{text-align: center;margin-top: auto;margin-bottom: auto;font-size:25px;}
+        .kode上方欄位>div{width: 5%;background-color: aqua;margin: 10px;}
+        .kode上方欄位>img{margin: 10px;margin-top: auto;margin-bottom: auto;}
+        .kode上方欄位>input{width: 10%;margin-left: 10px;margin-right: 5px;}
+        .kode上方欄位>div>a {text-decoration:none;color: #000;}
+        </style>
+    <scrip scr="ht.js"></scrip>
 </head>
 <body>
-    <img src="Screenshot_2022-11-19-22-05-27-073_com.android.chrome_2.jpg" height="150"></img>
-    <div>
-        <input type="text" placeholder="搜尋"/>
+    <div class="flex kode上方欄位">
+        <img src="logo.png" height="150" class="flexitem">
+        <p class="flexitem"><b>Kode</b></p>
+        <input type="text" placeholder="在kode上搜尋">
         <button id="btn3" onclick="find()">搜尋</button>
-        <a href="thanks.html">感謝 </a><a href="introduce.html">介紹 </a><a href="account number.html">帳號 </a>
-        <h1><b>Kode</b></h1>
-        <script scr="ht.js"></script>
-        <a href="https://www.google.com.tw/">捐款 </a>
-        <a href="https://scratch.mit.edu/">靈感 </a>
-        <a href="規則.html">規則 </a>
+        <div class="flexitem"> <a href="thanks.html">感謝 </a> </div>
+        <div class="flexitem"><a href="introduce.html" >介紹 </a></div>
+        <div class="flexitem"><a href="account number.html">帳號 </a></div>
+        <div class="flexitem"><a href="https://www.google.com.tw/">捐款 </a></div>
+        <div class="flexitem"><a href="https://scratch.mit.edu/">靈感 </a></div>
+        <div class="flexitem"><a href="規則.html">規則 </a></div>
     </div>
 </body>
 </html>
